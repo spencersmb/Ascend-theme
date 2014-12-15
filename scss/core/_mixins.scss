@@ -1,0 +1,45 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+@mixin round($round: 5px) {
+	border-radius: $round;
+	-moz-border-radius: $round;
+	-webkit-border-radius: $round;
+ 	 background-clip: padding-box; 
+}
+
+// Bem selectors
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+//modifier
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+//img setup
+@mixin img-replace($img, $h, $w, $disp: block) {
+	background-image: url('#{$path--rel}/#{$img}');
+	background-repeat: no-repeat;
+	width:$w;
+	height:$h;
+	display:$disp;
+	@content;
+}
+
+//pull right or left instead of adding class to html
+@mixin pull($direction: none){
+	@if $direction == "right" {
+		float: right !important;
+	}
+	@elseif $direction == "left" {
+		float: left !important;
+	}
+		
+}

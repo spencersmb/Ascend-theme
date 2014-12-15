@@ -1,0 +1,28 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+.as-main-header{
+	//background-color:#252525;
+	padding: 2em 0 1em 0 ;
+	position:relative;
+	z-index:1;
+	background:$primary-color;
+
+}
+
+.logo{
+
+	padding-left:em(5px);
+
+	a{
+		background-position: left center;
+		@include text-hide();
+		//@include img-replace("ascend-logo-gold.png", 71px, 100%);
+		@include img-retina( "../images/ascend-logo-gold.png", "../images/ascend-logo-gold-retina.png", 61px, 100% );
+		background-repeat: no-repeat;
+	  	width: 100%;
+	 	height: 71px;
+	  	display: block;
+
+	}
+}
