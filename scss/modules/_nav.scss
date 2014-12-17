@@ -12,7 +12,7 @@
 
 .as-primary-nav{
 	margin-top: em(15px);
-    text-decoration: none;
+  text-decoration: none;
 	
 	@include e(item){
 		@extend %nav-item-disp;
@@ -48,6 +48,7 @@
     display:inline-block;
     margin:0 em(0px);
 
+      // Responsive
       // @include mq(small){
       // display:block;
       // margin:0 em(12px);
@@ -63,6 +64,7 @@
     //border-bottom: 3px solid transparent;
     -webkit-font-smoothing: antialiased;
 
+    // Responsive
     // @include mq(small){
     //   display: block;
     //   padding: em(12px, 14px);

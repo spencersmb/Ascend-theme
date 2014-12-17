@@ -1,0 +1,51 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+%btn{
+	display: inline-block;
+	padding:11px 30px;
+	color:$primary-color;
+	border: 3px solid $secondary-color;
+	font-size: em(16px);
+	font-weight: $font-weight--bold;
+	text-decoration: none;
+	outline:none;
+}
+
+%hover-gold{
+	color:$white;
+	background-color: $secondary-color;
+	@include transition (all .3s);
+
+}
+
+.btn{
+	
+
+	@include e(more){
+		@extend %btn;
+
+	&:hover {
+		@extend %hover-gold;
+	}
+	&:focus{
+		text-decoration: none;
+		outline:none;
+	}
+	&:active{
+		@extend %hover-gold;
+	}
+	&:visited{
+		text-decoration: none;
+		outline:none;
+	}
+
+	}
+}
+
+//pick up
+//california crunnch roll, shrimp temp roll, 
+//is the hulk 100% vegitarian? if no avacado & sweet potato
+
+//salmon sashimi X2 shrimp tempura

@@ -9,21 +9,22 @@
  	 background-clip: padding-box; 
 }
 
-// Bem selectors
+//Bem selector guidelines
 @mixin e($element) {
   &__#{$element} {
     @content;
   }
 }
 
-//modifier
+//Bem modifier guidelines
 @mixin m($modifier) {
   &--#{$modifier} {
     @content;
   }
 }
 
-//img setup
+//img import
+//path defined in variables
 @mixin img-replace($img, $h, $w, $disp: block) {
 	background-image: url('#{$path--rel}/#{$img}');
 	background-repeat: no-repeat;
@@ -42,4 +43,10 @@
 		float: left !important;
 	}
 		
+}
+
+//font awesome
+@mixin fa($icon) {
+    @extend .fa;
+    @extend .fa-#{$icon}
 }

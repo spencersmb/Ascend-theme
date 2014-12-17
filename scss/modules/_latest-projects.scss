@@ -1,0 +1,46 @@
+// ==========================================================================
+// Latest projects
+// ==========================================================================
+.section__projects{
+	
+	padding: em(63px) 0;
+	background-color: palette(grey,xxx-light);
+	text-align: center;
+
+	h1{
+		@extend %hdln-home;
+	}
+
+}
+
+.projects__row{
+
+	padding:em(50px) 15px 0 15px;
+
+}
+
+.project{
+
+	img{
+		max-width: 100%;
+	}
+
+	
+}
+
+.project__title{
+	padding: em(32px);
+	background: $white;
+	border-bottom: 1px solid palette(grey,x-light);
+	margin-bottom: 60px;
+
+	h3{
+		@extend %hdln-home;
+		font-size:em(18px);
+		font-weight: $font-weight--semi-bold;
+	}
+}
+
+.fa{
+	@include fa(map-marker);
+}

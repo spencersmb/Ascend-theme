@@ -19,12 +19,19 @@
 
 %hdln-sec{
   font-family: $font-family--primary;
-  //font-weight: $font-weight--thin;
   font-size: em(21px);
   color: $h2-blue;
-  //line-height: (42px / 21px);
-  //letter-spacing: $letter-space;
 }
+
+%hdln-home{
+    color:palette(grey);
+    text-transform: uppercase;
+    font-size: em(24px);
+    font-weight: $font-weight--semi-bold;
+    text-align: center;
+}
+
+
 
 // .headline {
 

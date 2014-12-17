@@ -12,7 +12,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Stylesheets -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/application.css" />
+
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -84,9 +86,10 @@
 	</header>
 
 
+	<!-- YOUR CONTENT HERE -->
+	<main class="as-main-content">
 
-
-	<!-- MAIN SLIDER -->
+	<!-- HOMEPAGE MAIN SECTION -->
 	<section>
 		
 		<div class="section-main-intro">
@@ -121,14 +124,18 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="col-md-12 profile-bio">
-						<h2>Solara June</h2>
-						<h3>Designer/Developer</h3>
-						<ul class="profile-contact">
-							<li><span class="icn__small--location"></span>New York</li>
-							<li><span class="icn__small--email"></span>
-							<a href="mailto:office@mycompany.com">Hire me</a></li>
-						</ul>
+					<div class="col-md-12">
+						<div class="bio-header">
+							<h2>Solara June</h2>
+							<h3>Designer / Developer</h3>
+							<ul class="contacts">
+								<li class="contacts__item"><i class="fa fa-map-marker fa-lg  "></i>&nbsp; New York</li>
+								<li class="contacts__item"><a href="#"><i class="fa fa-envelope fa-fw"></i>&nbsp; Hire Me</a></li>
+								<!-- <li><span class="icn__small--location"></span>New York</li>
+								<li><span class="icn__small--email"></span>
+								<a href="mailto:office@mycompany.com">Hire me</a></li> -->
+							</ul>
+						</div>
 					</div>
 
 				</div> <!-- end row -->
@@ -143,86 +150,59 @@
 
 
 
-	<!-- LIST SECTION -->
+	<!-- FEATURED / LATEST PROJECTS -->
 	<section>
-		
-		<div class="section__skills">
+
+		<div class="section__projects">
 
 			<div class="container">
 				
-				<h1>A section with a description and a three-column list</h1>
-				<h2>This is the description text and also a sub-heading.</h2>
+				<h1>Latest Projects</h1>
+
+				<div class="row projects__row">
 
 
-				<div class="row">
-					<ul class="list__skills">
-						<li class="col-md-4">
-							<span class="icn__big--ecommerce">
-								
-							</span>
-							<h3>This is a nice little feature title</h3>
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point. 
-
- 							Let’s add some more text just for fun.</p>
-						</li>
-
-						<li class="col-md-4">
-							<span class="icn__big--ecommerce">
-								
-							</span>
-							<h3>This is a nice little feature title</h3>
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point. 
-
- 							Let’s add some more text just for fun.</p>
-						</li>
-
-						<li class="col-md-4">
-							<span class="icn__big--ecommerce">
-								
-							</span>
-							<h3>This is a nice little feature title</h3>
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point. 
-
- 							Let’s add some more text just for fun.</p>
-						</li>
-
-						<li class="col-md-4">
-							<span class="icn__big--ecommerce">
-								
-							</span>
-							<h3>This is a nice little feature title</h3>
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point. 
-
- 							Let’s add some more text just for fun.</p>
-						</li>
-
-						<li class="col-md-4">
-							<span class="icn__big--ecommerce">
-								
-							</span>
-							<h3>This is a nice little feature title</h3>
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point. 
-
- 							Let’s add some more text just for fun.</p>
-						</li>
-
-						<li class="col-md-4">
-							<span class="icn__big--ecommerce">
-								
-							</span>
-							<h3>This is a nice little feature title</h3>
-							<p>And it’s followed by some description text. You’ll want to keep this simple and to the point. 
-
- 							Let’s add some more text just for fun.</p>
-						</li>
-					</ul>
+					<div class="col-md-4 project">
+					
+						<img src="../images/12.jpg" alt="">
+						<div class="project__title">
+							<h3>
+								mobile app design
+							</h3>
+						</div>
+						
+					</div>
+					<div class="col-md-4 project">
+					
+						<img src="../images/12.jpg" alt="">
+						<div class="project__title">
+							<h3>
+								ascend brand design
+							</h3>
+						</div>
+						
+					</div>
+					<div class="col-md-4 project">
+					
+						<img src="../images/12.jpg" alt="">
+						<div class="project__title">
+							<h3>
+								research and insights
+							</h3>
+						</div>
+						
+					</div>
+				
+					
 				</div> <!-- end row -->
 
-				<a href="#top" class="link__top">- Go Top -</a>
-
+				<div class="col-md-12">
+					<a href="#" class="btn__more">View More</a>
+				</div>
+				
 			</div> <!-- end container -->
 
-		</div> <!-- end section__skills -->
+		</div> <!-- end section__projects -->
 
 	</section>
 
@@ -401,6 +381,10 @@
 		</div>
 
 	</footer>
+
+	<div class="as-overlay"></div>
+
+	</main> <!--  END MAIN CONTENT  -->
 
 	<!-- JavaScript -->
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>

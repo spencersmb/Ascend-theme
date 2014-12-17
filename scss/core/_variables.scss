@@ -5,10 +5,10 @@
 // Font Stacks
 
 $font-url--cabin: 'http://fonts.googleapis.com/css?family=Cabin:400,600,700,400italic,600italic,700italic';
-$font-url--gentium: 'http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic';
+$font-url--opensans: 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700';
 
 $font-family--primary    : 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family--secondary  : 'Gentium Basic', Georgia, Serif;
+$font-family--secondary  : 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $heading-font: $font-family--primary;
 
 
@@ -17,6 +17,7 @@ $heading-font: $font-family--primary;
 $font-weight--thin: 100;
 $font-weight--light: 300;
 $font-weight--medium: 400;
+$font-weight--semi-bold:600;
 $font-weight--bold: 700;
 $font-weight--ultra-bold: 900;
 
@@ -27,9 +28,10 @@ $letter-space: 1px;
 $white     : #fff;
 $black     : #0b0b0b;
 $grey      : #797e83;
+$ascend-grey: #f0f0f0;
 
-$mine-shaft        : #252525;//standard
-$alpine            : #c19535;//success
+$mine-shaft        : #252525;//primary background
+$alpine            : #c19535;//primary gold/accent
 $curious-blue      : #2894d8;//erros
 $fiord             : #3b5568;//warnings
 $hippie-blue       : #6694b4;//info
@@ -46,11 +48,12 @@ $link-hover        : $alpine;
 
 $shadow-color      : rgba($black, .2);
 
-//color palette modifiers
+//Color Palette modifiers
 //dual Nested array
 $palettes: (
 
 	grey: (
+		xxx-light: lighten($grey,45%),
 		xx-light: lighten($grey,43%),
 		x-light: lighten($grey,35%),
 		light: lighten($grey,12%),
@@ -66,7 +69,7 @@ $palettes: (
 
 	);
 
-// //color map
+// //Color Map
 // //single nested array
 // $ui-colors:(
 // 	default: $fountain-blue,
@@ -83,16 +86,21 @@ $base__line: 21px; //was 24
 
 // // Border radius
 
-// $br--default     : .4em;
-// $br--round       : 50%;
+$br--default     : .4em;
+$br--round       : 50%;
 
 // // Transitions
 
-// $trns-duration   : .3s;
+$trns-duration   : .3s;
 
 // //Set path for image asset
 $path--rel     : "../images";
 
+// Z-index
+ 
+$below-content: 1;
+$content: 2;
+$above-content: 3;
 
 // //grid
 
